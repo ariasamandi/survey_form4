@@ -1,0 +1,11 @@
+
+.comment{
+    width: 400px;
+    height: 100px;
+    display: block;
+}
+button{
+    background-color: aqua;
+    margin: 40px 0 0 330px; 
+    width: 75px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'survey/css/result.css' %}" />
+</head>
+<body>
+    <div class='green-box'>
+        <h3>Thanks for submitting this form! You have submitted this form {{request.session.form_submit_number}} times now.</h3>
+    </div>
+    <h2>Submitted Info</h2>
+    <h4>Name: {{request.session.name}}</h4>
+    <h4>Dojo Location: {{request.session.location}}</h4>
+    <h4>Favorite Language: {{request.session.language}}</h4>
+    <h4>Comment: {{request.session.comment}}</h4>
+    <a href="/"><button>Go Back</button></a>
+</body>
+</html>
